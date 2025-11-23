@@ -1,4 +1,3 @@
-// Rotas REST para Itens de Pedido
 const express = require('express');
 const controller = require('../controllers/pedidoItemController');
 
@@ -11,4 +10,3 @@ router.put('/:id', controller.update);
 router.delete('/:id', controller.delete);
 
 module.exports = router;
-

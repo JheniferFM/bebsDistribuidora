@@ -1,8 +1,6 @@
-// Middleware centralizado de tratamento de erros
 module.exports = {
   errorHandler(err, req, res, next) {
     if (err) {
-      // eslint-disable-next-line no-console
       console.error('API Error:', err.message, err.stack);
     }
     const status = err.status || 500;

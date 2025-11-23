@@ -1,4 +1,3 @@
-// Rotas REST para Funcionários
 const express = require('express');
 const controller = require('../controllers/funcionarioController');
 
@@ -11,4 +10,3 @@ router.put('/:id', controller.update);
 router.delete('/:id', controller.delete);
 
 module.exports = router;
-

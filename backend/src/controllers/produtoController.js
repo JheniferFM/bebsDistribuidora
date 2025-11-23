@@ -1,4 +1,3 @@
-// Controller para operações CRUD de Produtos
 const { Produto, Embalagem, UnidadeProducao } = require('../models');
 
 module.exports = {

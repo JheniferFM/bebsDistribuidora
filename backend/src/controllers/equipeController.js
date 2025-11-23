@@ -1,4 +1,3 @@
-// Controller CRUD de Equipes
 const { Equipe, Funcionario } = require('../models');
 
 module.exports = {

@@ -1,4 +1,3 @@
-// Rotas REST para Equipes
 const express = require('express');
 const controller = require('../controllers/equipeController');
 
@@ -11,4 +10,3 @@ router.put('/:id', controller.update);
 router.delete('/:id', controller.delete);
 
 module.exports = router;
-

@@ -1,8 +1,6 @@
-// Serviço de regras de negócio de pedidos
 const { PedidoItem } = require('../models');
 
 module.exports = {
-  // Calcula o total do pedido somando quantidade * preçoUnitario de cada item
   async calcularTotal(pedidoId) {
     const itens = await PedidoItem.findAll({ where: { pedidoId } });
     const total = itens.reduce((acc, item) => {
@@ -13,4 +11,3 @@ module.exports = {
     return Number(total.toFixed(2));
   },
 };
-

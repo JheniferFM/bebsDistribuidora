@@ -1,4 +1,3 @@
-// Controller CRUD de Itens de Pedido
 const { PedidoItem, Produto } = require('../models');
 
 module.exports = {
@@ -8,4 +7,3 @@ module.exports = {
   async findAll(req, res, next) { try { const r = await PedidoItem.findAll({ include: [{ model: Produto, as: 'produto' }], order: [['id', 'ASC']] }); return res.json(r); } catch (e) { next(e); } },
   async findById(req, res, next) { try { const { id } = req.params; const r = await PedidoItem.findByPk(id, { include: [{ model: Produto, as: 'produto' }] }); if (!r) return res.status(404).json({ message: 'Item não encontrado' }); return res.json(r); } catch (e) { next(e); } },
 };
-

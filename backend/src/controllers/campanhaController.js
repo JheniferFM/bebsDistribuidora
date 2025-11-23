@@ -1,4 +1,3 @@
-// Controller CRUD de Campanhas Publicitárias
 const { Campanha, Produto } = require('../models');
 
 module.exports = {

@@ -1,4 +1,3 @@
-// Controller CRUD de Clientes
 const { Cliente } = require('../models');
 
 function isValidCNPJ(v) {

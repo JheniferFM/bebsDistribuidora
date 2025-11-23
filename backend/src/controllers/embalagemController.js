@@ -1,4 +1,3 @@
-// Controller CRUD de Embalagens
 const { Embalagem } = require('../models');
 
 module.exports = {
@@ -8,4 +7,3 @@ module.exports = {
   async findAll(req, res, next) { try { const r = await Embalagem.findAll({ order: [['id', 'ASC']] }); return res.json(r); } catch (e) { next(e); } },
   async findById(req, res, next) { try { const { id } = req.params; const r = await Embalagem.findByPk(id); if (!r) return res.status(404).json({ message: 'Embalagem não encontrada' }); return res.json(r); } catch (e) { next(e); } },
 };
-

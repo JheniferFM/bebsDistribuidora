@@ -1,4 +1,3 @@
-// Controller CRUD de Pedidos com cálculos de total
 const { Pedido, PedidoItem, Cliente, Produto, Funcionario } = require('../models');
 const pedidoService = require('../services/pedidoService');
 

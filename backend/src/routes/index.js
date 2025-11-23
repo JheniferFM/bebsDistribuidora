@@ -1,4 +1,3 @@
-// Registra todas as rotas da API por entidade
 const express = require('express');
 const produtoRoutes = require('./produtoRoutes');
 const embalagemRoutes = require('./embalagemRoutes');
